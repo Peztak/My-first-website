@@ -1,0 +1,13 @@
+body {
+	font-family: "Arial", sans-serif;
+}
+p {
+	text-align: center;
+	height: all;
+	width: all;
+	color: white;
+	font-size: 60px;
+	font-weight: bold;
+	background-color: teal;
+	text-decoration: underline;
+}
