@@ -16,6 +16,7 @@ body {
     margin: 0;
 }
 nav{
+    z-index: 2;
     width: 100%;
     margin: 0 auto;
     background-color: #333;
@@ -114,6 +115,7 @@ nav > ul li:hover .sous-menu{
     background-color: rgba(192, 192, 192);
 }
 .overlay {
+    z-index: 2;
     position: fixed;
     left: 0px;
     top:0px;
@@ -123,6 +125,7 @@ nav > ul li:hover .sous-menu{
     display:none;
 }
 .overlay2 {
+    z-index: 2;
     position: fixed;
     left: 0px;
     top:0px;
@@ -132,6 +135,7 @@ nav > ul li:hover .sous-menu{
     display:none;
 }
 .overlay3 {
+    z-index: 2;
     position: fixed;
     left: 0px;
     top:0px;
@@ -177,16 +181,16 @@ nav > ul li:hover .sous-menu{
     cursor: pointer;
 }
 .slider{
-  width: 100%;
+    width: 100%;
 }
 
 .contents {
-  width: calc(600px * 5);
-  animation: glisse 10s infinite;
+    width: calc(400px * 5);
+    animation: glisse 10s infinite;
 }
 
 .content {
-  float: left;
+    float: left;
 }
 
 @keyframes glisse {
@@ -194,13 +198,13 @@ nav > ul li:hover .sous-menu{
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-600px);
+    transform: translateX(-400px);
   }
   50% {
-    transform: translateX(-1200px);
+    transform: translateX(-800px);
   }
   75% {
-    transform: translateX(-1800px);
+    transform: translateX(-1200px);
   }
   100% {
     transform: translateX(0);
@@ -209,6 +213,6 @@ nav > ul li:hover .sous-menu{
 }
 
 .content>img {
-width: 600px;
-height: 400px;
+    width: 400px;
+    eight: 400px;
 }

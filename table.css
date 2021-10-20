@@ -82,7 +82,7 @@ nav > ul li:hover .sous-menu{
 }
 table {
  width: 100%;
- border-collapse: collapse
+ border-collapse: collapse;
 }
 th {
  border: 1px solid black;
