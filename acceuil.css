@@ -216,3 +216,6 @@ nav > ul li:hover .sous-menu{
     width: 400px;
     eight: 400px;
 }
+a:hover {
+    color: teal;
+}
