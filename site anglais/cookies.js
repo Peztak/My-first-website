@@ -1,5 +1,6 @@
 const cookieContainer = document.querySelector(".cookiescontainer");
 const cookieBtn = document.querySelector(".cookiesbtnaccept");
+const cookieBtnPerso = document.querySelector(".footer-btn");
 const cookieBtnRefuse = document.querySelector(".cookiesbtnrefuse");
 
 cookieBtn.addEventListener("click", () => {
@@ -10,6 +11,10 @@ cookieBtn.addEventListener("click", () => {
 cookieBtnRefuse.addEventListener("click", () => {
     cookieContainer.classList.remove("activeBnr");
     localStorage.setItem("cookieBannerDisplayed", "cookie refused");
+});
+cookieBtnPerso.addEventListener("click", () => {
+    cookieContainer.classList.remove("activeBnr");
+    localStorage.setItem("cookieBannerDisplayed", "cookie accepted");
 });
 
 setTimeout(() => {
