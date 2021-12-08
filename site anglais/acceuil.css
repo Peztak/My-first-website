@@ -1,0 +1,284 @@
+body {
+	font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#titre {
+	text-align: center;
+	height: all;
+	width: all;
+	color: white;
+	font-size: 60px;
+	font-weight: bold;
+	background-color: teal;
+	text-decoration: underline;
+    top: 0;
+    margin: 0;
+}
+nav{
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous-menu{
+    padding: 0px;
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #333;
+    position: absolute;
+    width: max-content;
+}
+nav > ul li:hover .sous-menu{
+    display: block;
+}
+.sous-menu li{
+    width: 100%;
+    text-align: left;
+}
+.sous-menu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous-menu a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+.btnPopup{
+    margin-left: 100px;
+    background-color: teal;
+    padding: 1em 2em;
+    font-size:14pt
+    color: #000
+    cursor: pointer;
+}
+.btnPopup2{
+    margin-left: 250px;
+    background-color: teal;
+    padding: 1em 2em;
+    font-size:14pt
+    color: #000
+    cursor: pointer;
+}
+.btnPopup3{
+    margin-left: 250px;
+    background-color: teal;
+    padding: 1em 2em;
+    font-size:14pt
+    color: #000
+    cursor: pointer;
+}
+.btnPopup:hover{
+    background-color: rgb(192, 192, 192);
+}
+.btnPopup2:hover{
+    background-color: rgba(192, 192, 192);
+}
+.btnPopup3:hover{
+    background-color: rgba(192, 192, 192);
+}
+.overlay {
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+.overlay2 {
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+.overlay3 {
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+.popup{
+    margin: 20% auto;
+    width : 70%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.popup2{
+    margin: 20% auto;
+    width : 70%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.popup3{
+    margin: 20% auto;
+    width : 70%;
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.btnClose {
+    float: right;
+    cursor: pointer;
+}
+.btnClose2 {
+    float: right;
+    cursor: pointer;
+}
+.btnClose3 {
+    float: right;
+    cursor: pointer;
+}
+.slider{
+    width: 100%;
+}
+
+.contents {
+    width: calc(400px * 5);
+    animation: glisse 10s infinite;
+}
+
+.content {
+    float: left;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: translateX(-800px);
+  }
+  75% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+.content>img {
+    width: 400px;
+    eight: 400px;
+}
+a:hover {
+    color: teal;
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: teal;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+}
+a.Legal {
+    color: white;
+    text-decoration: underline;
+    margin: 5px;
+}
+a.Legal:hover {
+    color: black;
+}
+.cookiescontainer {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: white;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.4);
+  transition: 400ms;
+}
+
+.cookiescontainer.activeBnr {
+  bottom: 0;
+}
+
+.cookiescontainer a {
+  color: white;
+}
+
+.cookiesbtnaccept {
+  background: green;
+  border: 0;
+  color: white;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.cookiesbtnrefuse {
+  background: #e84118;
+  border: 0;
+  color: white;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 15px;
+}
